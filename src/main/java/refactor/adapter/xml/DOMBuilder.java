@@ -92,7 +92,7 @@ public class DOMBuilder extends AbstractBuilder {
 	public String toString() {
 		OutputFormat format = new OutputFormat(doc);
 		StringWriter stringOut = new StringWriter();
-		XMLSerializer serial = new XMLSerializer(stringOut, format);
+			XMLSerializer serial = new XMLSerializer(stringOut, format);
 		try {
 			serial.asDOMSerializer();
 			serial.serialize(doc.getDocumentElement());
